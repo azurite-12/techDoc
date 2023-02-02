@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+    </style>
+    <title>Intro a Python</title>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>PY Tutorial</header>
+      <ul>
+        <li><a href="#Introducción" class="nav-link">Introducción</a></li>
+        <li><a href="#Preparaciones" class="nav-link">Preparaciones</a></li>
+        <li><a href="#Hola_Mundo" class="nav-link">Hola Mundo</a></li>
+        <li><a href="#Constantes_y_variables" class="nav-link">Constantes y variables</a></li>
+        <li><a href="#Tipos_de_datos" class="nav-link">Tipos de datos</a></li>
+        <li><a href="#Operadores_matemáticos" class="nav-link">Operadores matemáticos</a></li>
+        <li><a href="#Asignación_de_valores" class="nav-link">Asignación de valores</a></li>
+        <li><a href="#Operadores_de_asignación" class="nav-link">Operadores de asignación</a></li>
+        <li><a href="#Operadores_de_comparación" class="nav-link">Operadores de comparación</a></li>
+        <li><a href="#Declaraciones_condicionales" class="nav-link">Declaraciones condicionales</a></li>
+        <li><a href="#Ejercicios_if" class="nav-link">Ejercicios if</a></li>
+        <li><a href="#Listas" class="nav-link">Listas</a></li>
+        <li><a href="#Ejercicios_if_dos" class="nav-link">Ejercicios if dos</a></li>
+        <li><a href="#Loops_(o_ciclos)" class="nav-link">Loops (o ciclos)</a></li>
+        <li><a href="#Ejercicios_loops" class="nav-link">Ejercicios loops</a></li>
+        <li><a href="#Funciones" class="nav-link">Funciones</a></li>
+        <li><a href="#Ejercicios_funciones" class="nav-link">Ejercicios funciones</a></li>
+        <li><a href="#Referencias" class="nav-link">Referencias</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introducción">
+        <header>Introducción</header>
+        <article>
+          <p>Python es un lenguaje de programación multi-paradigma de <a href="https://en.wikipedia.org/wiki/Strong_and_weak_typing" target="_blank">tipado fuerte</a> y de <a href="https://en.wikipedia.org/wiki/High-level_programming_language" target="_blank">alto nivel</a> (alto nivel de abstracción, innecesario conocimiento de hardware). Es de los lenguajes de programación más populares para principiantes debido a la filosofía de simpleza de los desarrolladores de este (su nivel de simpleza solamente es rivalizado por Ruby). </p>
+          <p>Si bien Python no es conocido por su rendimiento, sigue siendo el lenguaje de programación predilecto a la hora de <a href="https://en.wikipedia.org/wiki/Data_analysis" target="_blank">análisis estadístico</a>, y también para <a href="https://en.wikipedia.org/wiki/Ren'Py" target="_blank">desarrolladores independientes de novelas visuales</a>. Python también es usado por aplicaciones muy populares, como <a href="https://www.youtube.com/" target="_blank">YouTube</a> y <a href="https://open.spotify.com/" target="_blank"> Spotify</a>.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Preparaciones">
+        <header>Preparaciones</header>
+        <article>
+          <p>Antes de empezar con Python en general, primero tenemos que instalar un par de cosas. </p>
+          <ul>
+            <li>Si bien puedes escribir codigo incluso en el bloc de notas integrado de tu computador, es recomendable usar herramientas diseñadas para esto. Como:
+              <ul>
+                <li><a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a> (para ordenadores más potentes y modernos)</li>
+                <li><a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> (para ordenadores más antiguos y/o de menor potencia).</li>
+              </ul>
+            </li> 
+            <li>El lenguaje mismo desde su <a href="https://www.python.org/" target="_blank">página principal</a></li>
+            <li>Configurar tu ordenador para que éste muestre extensiones de archivos usando <a href="https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01" target="_blank">este tutorial</a>.</li>
+          </ul>
+          <p>Por último, crea un documento de texto en una localización de tu preferencia, y cambia la extensión de '.txt' a '.py'</p>
+          <code>Nuevo documento de texto.txt ---> Nuevo documento de texto.py</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Hola_Mundo">
+        <header>Hola Mundo</header>
+        <article>
+          <p>El primer script que todo programador ha hecho en su carrera. "Hola Mundo" tiene sus <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program" target="_blank">raíces</a> en el libro de 1978 "The C Programming Language", y es también usado para probar compiladores y que un lenguaje esté instalado correctamente.</p>
+          <p>Abre el documento que creaste en el paso anterior haciéndole click derecho y clickeando "Abrir con Code" si usted instaló VSCode más arriba, o "Edit with Notepad++" si instaló Notepad++. Luego, escriba lo siguiente:</p>
+          <code>print("Hello World!")</code>
+          <p>Guarde sus cambios con ctrl+S y luego ejecute el script presionand F5 en VSCode, o escribiendo 'python3.11 [nombre de su archivo].py' en su símbolo del sistema (busquelo escribiendo "cmd" en su barra de búsqueda de Windows).</p>
+          <p>Felicidades, usted acaba de hacer su primer script.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Constantes_y_variables">
+        <header>Constantes y variables</header>
+        <article>
+          <p>En matemáticas, existen los conceptos de constantes y variables.</p>
+          <ul>
+            <li>Constante: es un objeto matemático con un valor fijo e inmutable (Ejemplo: π y e).</li>
+            <li>Variable: es un objeto matemático cuyo valor varía y cambia dependiendo de sus circunstancias. Variables comunes son x, y o z. Estos objetos pueden representar un número, un vector, una matríz o una función. </li>
+          </ul>
+          <p>Como Python es un lenguaje de tipado fuerte y dinámico, no hay forma de declarar constantes. Sin embargo, es buena práctica en todos los lenguajes de programación declarar tus constantes en mayúscula (ej: CONST=10) y tus variables en <a href="https://en.wikipedia.org/wiki/Camel_case"  target="_blank">camelCase</a> (ej: myVar=5).</p>
+          <p>Ahora practica tú en Python escribiendo lo siguiente:</p>
+          <pre>
+            <code>
+              x = 4
+              y = 6
+              print(x+y)
+              print(x+10)
+            </code>
+          </pre>
+          <p>Y ejecutelo. Sientete libre de cambiar los valores de las variables en el ejemplo anterior para experimentar. </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Tipos_de_datos">
+        <header>Tipos de datos</header>
+        <article>
+          <p>Python posee 8 tipos de datos dentro de si mismo, pero los más básicos son los 4 siguientes:</p>
+          <ul>
+            <li><code>str</code> --> String, texto. Siempre va entre comillas dobles " o simples '.</li>
+            <li>Numéricos: 
+              <ul>
+                <li><code>int</code> --> Número entero.</li>
+                <li><code>float</code> --> Número decimal.</li>
+              </ul>
+            </li>
+            <li>Secuencias: 
+              <ul>
+                <li><code>list</code> --> Colección de valores ordenados, modificable.</li>
+                <li><code>tuple</code> --> Colección de valores ordenados, inmutable.</li>
+                <li><code>set</code> --> Colección de valores no ordenados, inmutable. No permite elementos duplicados dentro de éste.</li>
+              </ul>
+            </li>
+            <li><code>bool</code> --> Booleano. Solo toma dos valores: <code>True</code> y <code>False</code>.</li>
+          </ul>
+          <p>Debido que python es de tipado dinámico, no es necesario especificar el tipo de dato antes de una variable a la hora de declararla. Python reconocerá que la variable myList en <code>myList=[1,2,3]</code> en tu código es una lista (list) automáticamente. </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Operadores_matemáticos">
+        <header>Operadores matemáticos</header>
+        <article>
+          <p>Python soporta múltiples operadores matemáticos para hacer cálculos y otros juegos con variables y constantes. Éstos son: </p>
+          <ul>
+            <li><b>+</b> | Adición (suma). </li>
+            <li><b>-</b> | Sustracción (resta).</li>
+            <li><b>*</b> | Multiplicación.</li>
+            <li><b>/</b> | División. </li>
+            <li><b>%</b> | Módulo (devuelve el resto que resulta de la división entre dos números).</li>
+            <li><b>**</b> | Potencia.</li>
+            <li><b>//</b> | División de piso (devuelve la parte entera que resulta de la división entre dos números). </li>
+          </ul>
+          <p>Sientete libre de copiar el ejemplo de la sección anterior y experimentar con los diferentes operadores.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Asignación_de_valores">
+        <header>Asignación de valores</header>
+        <article>
+          <p>En Python, los valores de que están al lado derecho del signo <code>=</code> se evaluan antes de asignarlos a la variable de la izquierda. Debido a esto, puedes usar variables anteriormente declaradas dentro de la misma linea de codigo. Por ejemplo: </p>
+          <pre>
+            <code>
+              x = 4
+              x = x + 20
+              print(x)
+              
+              out: 24
+            </code>
+          </pre>
+          <p>Como se muestra en este ejemplo el output es 24. Python ignora todo lo que hay a la izquierda del signo '=' hasta que termina de evaluar todo lo que hay a la derecha. Sientete libre de experimentar con el ejemplo anterior, añadiendo más operaciones y paréntesis. Ej: <code>x = x * 3 * (x-4)</code></p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Operadores_de_asignación">
+        <header>Operadores de asignación </header>
+        <article>
+          <p>Python tiene ciertos atajos para asignar valores a variables usando las mismas variables, algunos de estos son:</p>
+          <ul> 
+            <li><b>+=</b> |  Ej: x+=3 --> x = x + 3</li>
+            <li><b>-=</b> | Ej: x-=5 --> x = x - 5</li>
+            <li><b>*=</b> |  Ej: x*=2 --> x = x * 2</li>
+            <li><b>/=</b> |  Ej: x/=8 --> x = x / 8</li>
+            <li><b>**=</b> |  Ej: x**=3 --> x = x ** 3</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Operadores_de_comparación">
+        <header>Operadores de comparación</header>
+        <article>
+          <p>Estos operadores devuelven un valor <code>True</code> o <code>False</code> a la hora de evaluar los dos valores en los que se usan.</p>
+          <ul>
+            <li><b>==</b> --> Igual. Ej: si <code>3==3</code>, el sistema devuelva <code>True</code>. Si <code>3==5</code> el sistema devuelve <code>False</code>.</li>
+            <li><b>!=</b> --> Desigual. Ej: si <code>3!=3</code>, el sistema devuelva <code>False</code>. Si <code>3!=5</code> el sistema devuelve <code>True</code>.</li>
+            <li><b>></b> --> Mayor.</li>
+            <li><b><</b> --> Menor.</li> 
+            <li><b>>=</b> --> Mayor o igual.</li>
+            <li><b><=</b> --> Menor o igual.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Declaraciones_condicionales">
+        <header>Declaraciones condicionales</header>
+        <article>
+          <p>Existen una maneras para comparar valores y modificar el comportamiento del código:</p>
+          <ul>
+            <li>
+              <b>if...else</b> --> Declaras una condición con <code>if</code> y propones una condición. Si esta condición se cumple, señalas una instrucción a seguir para el script. Si no se cumple, la condición señalada anteriormente no se cumple y el codigo sigue ejecutandose despues de esto. Aunque puedes declarar <code>else</code> y señalar otra instrucción a ejecutarse. Ejemplo: 
+              <pre>
+                <code>
+                  if num==3:
+                    print("Tu número es 3")
+                  else: 
+                    print("Tu número no es 3")
+                </code>
+              </pre>
+              <p>Está también la declaración <code>elif</code>, que te permite anidar más condiciones a un declaración if:</p>
+              <pre>
+                <code>
+                  if num > 3 :
+                    print("Su número es mayor que 3")
+                  elif num < 3:
+                    print("Su número es menor que 3")
+                  else:
+                    print("Su número es 3")
+                </code>
+              </pre>
+              <p>También existen operadores lógicos como <code>and</code>, <code>or</code> y <code>not</code> que evaluan múltiples comparaciones y devuelven <code>True</code> o <code>False</code> dependiendo del resultado. Ejemplo:</p>
+              <pre>
+                <code>
+                  if (num >= 5) and (num <= 10):
+                    print("Su número está entre 5 y 10")
+                  else:
+                    print("Su número está fuera del rango 5-10")
+                </code>
+              </pre>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Ejercicios_if">
+        <header>Ejercicios if</header>
+        <article>
+          <ol>
+            <li>
+              <p>Usando lo que has aprendido hasta ahora, crea un script en Python llamado <code>oddOrEven.py</code> que verifica si un número introducido por el usuario es par o impar. Si es par, imprima en pantalla que el número dado es par, si no lo es; imprima en pantalla que el número dado es impar. Un ejemplo I/O sería: </p>
+              <pre>
+                <code>
+                  Ingrese un número: 3
+                  3 es impar
+                </code>
+              </pre>
+              <p id="tip"><b>Tip:</b> usa la función <code>input()</code> asignada a una variable para que el script le pida un número al usuario a la hora de la ejecución. Como <code>input()</code> no es un tipo de dato, recuerde especificar el tipo de dato correspondiente a la hora de asignar una variable.</p>
+              <p><b>Tip:</b> para concatenar dos tipos de datos diferentes en un string, use <code>str()</code> en el dato que no es un String para forzarlo a que lo sea. Para concatenar dos o más Strings, use +. Ej: <code>print("Esto es una " + "string de ejemplo")</code> </p>
+            </li>
+            <li>
+              Crea un script llamado <code>calificaciones.py</code> que evalua la prueba de un estudiante de acuerdo a su puntaje (ingresado por el usuario) siguiendo el siguiente criterio: 
+              <ul>
+                <li>Si el estudiante sacó 90 o más puntos: sacó una A</li>
+                <li>Si el estudiante sacó entre 80 y 89 puntos: una B</li>
+                <li>Si el estudiante sacó entre 60 y 79 puntos: una C</li>
+                <li>Si el estudiante sacó menos de 60 puntos: una D</li>
+              </ul>
+              <p></p>
+            </li>
+            <li>
+              Escriba un script llamado <code>weekDay.py</code> que, luego de recibir un número entero ingresado por el usuario entre 1 a 7, imprima en pantalla el día de la semana correspondiente a este. Si el usuario no ingresó un número dentro de ese rango, detenga la ejecución del script. Un ejemplo I/O sería:
+              <pre>
+                <code>
+                  Ingrese un número: 4
+                  4- Jueves
+                </code>
+              </pre>
+              <p><b>Tip:</b> la instrucción para detener la ejecución de un script prematuramente es <code>exit()</code>.</p>
+            </li>
+            <li>
+              Escriba un script llamado <code>sumOrProduct.py</code> que, dado dos numeros enteros ingresados por el usuario, imprima en pantalla el producto de estos números si éste es mayor que 1000. Si no, imprima su suma. Un ejemplo I/O sería: 
+              <pre>
+                <code>
+                  Ingrese el primer número: 25
+                  Ingrese el segundo número: 100
+                  Resultado: 2500
+
+                  Ingrese el primer número: 10
+                  Ingrese el segundo número: 20
+                  Resultado: 30
+                </code>
+              </pre>
+            </li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="main-section" id="Listas">
+        <header>Listas</header>
+        <article>
+          <p>Una lista es una estructura de datos básica. Es una colección de elementos ordenados y modificable. Se puede declarar una de éstas usando brackets [] y llenando éstos con valores separados por comas. Debido a su naturaleza, ésta está indexada de 0 hasta n-1, siendo n el número total de elementos de la lista. Esto quiere decir que es posible a acceder a cualquier de estos elementos, o un rango de ellos. Ejemplo: </p>
+          <pre>
+            <code>
+              miLista = [2,3,5,7] // Lista de n=4 elementos.
+              print(miLista)
+              print(miLista[0])
+              print(miLista[2])
+              print(miLista[3])
+              print(miLista[4])
+
+              out:
+              [2,3,5,7]
+              2
+              5
+              7
+              IndexError: List index out of range.
+            </code>
+          </pre>
+          <p>Como se puede ver en el ejemplo, llamar a la variable retorna la lista completa. Si bien esto es útil para ciertos algoritmos, esto no sirve a la hora de realizar operaciones aritméticas. Si tratas de hacer <code>miLista + 3</code> Python tirará un error. Para esto es necesario usar los índices correspondientes de cada elemento. Para esto es necesario escribir la variable de la lista seguido inmediatamente (sin espeacios) por el índice del valor al que quieres llamar. Como las listas son indexadas de 0 hasta n-1 (n= número total de valores de la lista), tienes que escribir <code>miLista[3]</code> para llamar al cuarto valor, <code>miLista[5]</code> para llamar al sexto valor, etc. Si llamas al valor n, sale un error, como señala en el ejemplo.</p>
+          <p>Un operador útil de listas son los dos puntos <b>:</b>. Estos simbolizan un rango y pueden ser usados para llamar a una sub-lista de la lista original. Ejemplo:</p>
+          <pre>
+            <code>
+              miLista=[2,3,5,7,9]
+              print(miLista[0:3])
+              print(miLista[2:5])
+              print(miLista[0:5])
+              print(miLista[2:])
+              print(miLista[:4])
+
+              out:
+              [2,3,5]
+              [5,7,9]
+              [2,3,5,7,9]
+              [5,7,9]
+              [2,3,5,7]
+            </code>
+          </pre>
+          <p><b>Tip:</b>siendo k un número entero, usar <code>k:</code> sin valor final devuelve una sub-lista conteniendo todos los valores de k en adelente (de k hasta n-1). Usar <code>:k</code> devuelve una sublista de los primeros k valores de la lista.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Ejercicios_if_dos">
+        <header>Ejercicios if dos</header>
+        <article>
+          <ol>
+            <li>
+              Crea un script llamado <code>firstAndLast.py</code> Que verifique si el primer y el último elemento de esta son iguales o no. Imprima en pantalla una frase representando el resultado. Puede usar la lista dada en el ejemplo anterior, o usted mismo crear una diferente.
+              <p><b>Tip:</b> la función <code>len()</code> recibe una lista y devuelve la cantidad total de elementos de ésta.</p>
+            </li>
+            <li>
+              <p>Crea un script llamado <code>isLong.py</code> que verifique si dos listas (creadas por usted) tienen la misma longitud. Imprima en pantalla una frase representando el resultado</p>
+            </li>
+          </ol>
+          <ul>Funciones útiles de listas:
+            <li><b>.append(<i>elem</i>)</b> --> inserta el elemento <code>elem</code> al final de una lista. Ej: <code>miLista.append(80) --> out: miLista = [2,3,5,7,9,80]</code></li>
+            <li><b>.insert(<i>index,elem</i>)</b> --> Inserta el elemento <code>elem</code> en la posición <code>index</code>. Ej: <code>miLista.insert(2,24) --> out: miLista = [2,3,24,5,7,9,80]</code></li>
+            <li><b>.extend(<i>list</i>)</b> --> Inserta la <code>lista</code> provista como argumento al final de la lista a la que se le aplica esta función.</li>
+            <li><b>.pop(<i>index</i>)</b> --> Elimina el elemento en el indice <code>index</code> de la lista a la que se le aplica esta función, dejar el argumento vacío (<code>.pop()</code>) elimina el último elemento de la lista.</li>
+            <li><b>.remove(<i>elem</i>)</b> --> Elimina el específico elemento <code>elem</code> de la lista a la que se le aplica. Ej: <code>miLista.remove(9) --> out: miLista = [2,3,24,5,7,80]</code></li>
+            <li><b>.clear()</b> --> Elimina todos los elementos de una lista y devuelve una lista vacía [].</li>
+            <li><b>.count(<i>elem</i>)</b> --> devuelve un <code>int</code> que corresponde al número total de instancias que el elemento <code>elem</code> está en la lista.</li>
+            <li><b>.reverse()</b> --> Devuelve una lista con los elementos de la lista a la que se le aplica pero al revéz.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Loops_(o_ciclos)">
+        <header>Loops (o ciclos)</header>
+        <article>
+          <p>En muchos lenguajes de programación, existen declaraciones que permiten ejecutar una (o varias) instrucciones de código múltiples veces, siempre que se les de una condición. Python no es diferente en este aspecto, y el lenguaje posee dos tipos de ciclos: <b>while</b> y <b>for</b>.</p>
+          <ol>
+            <li>
+              <b>while(<i>condición</i>)</b> --> las instrucciones escritas dentro de este ciclo se ejecutarán repetidamente siempre y cuando la condición dentro de éste se cumpla. Hay que tener precaución y escribir instrucciones específicas para que el loop no se ejecute eternamente.
+              <pre>
+                <code>
+                  // 1
+                  NUM = 3
+                  while(NUM < 5):
+                    print("Hola mundo")
+                  
+                  // 2
+                  count = 0
+                  while(count < 5):
+                    print("Hola mundo")
+                    count += 1
+                </code>
+              </pre>
+              <p>El primer ejemplo repite la instrucción dentro del while (<code>print("Hola mundo")</code>) siempre que <code>NUM</code> sea menor a 5. Como <code>NUM</code> es una constante, el código se repetirá eternamente, y hay que forzarlo a detenerse con <code>shift+F5</code>.</p>
+              <p>El segundo ejemplo, sin embargo, usa una variable, y dentro del while, esta variable se modifica con cada iteración. Lo que resultá en el while deteniendose una ves la variable <code>count</code> llega a 5. Osea, solo se imprime <code>Hola mundo</code> 5 veces en pantalla.</p>
+            </li>
+            <li>
+              <b>for <code>iterator</code> in <code>sequence</code></b> --> este ciclo recibe dos valores. El primer valor va después del <code>for</code> y es la variable iteradora, usualmente denotada como <code>i</code>. Mientras que la secuencia puede ser cualquier rango de valores (usando la función <code>range()</code>). También cabe mencionar que la secuencia también recibe listas y strings. Contrario al <code>while</code> las instrucciones dentro de esta declaración se ejecutan una vez se cumple el rango de valores dado.
+              <pre>
+                <code>
+                  // 1 usando función range
+                  for i in range(5):
+                    print("Hola mundo " + str(i))
+
+                  // 2 usando una lista
+                  miLista = [2,3,5,7,9,11]
+                  for i in miLista:
+                    print("Hola mundo " + str(i))
+                </code>
+              </pre>
+              <p>En el primer ejemplo, la instrucción dada dentro del for imprime <code>Hola mundo 0    Hola mundo 1</code>, etc. hasta que termina la secuencia range. Ésta función empieza de 0 y termina en n-1, siendo n el número entero dado a la función. Si a <code>range(x,y)</code> le das dos valores <code>x</code> e <code>y</code>, la secuencia empieza en <code>x</code> y termina en <code>y-1</code>. Ej: <code>range(2,5) --> 2 3 4</code> </p>
+              <p>En el segundo ejemplo, la instrucción dada dentro del for imprime <code>Hola mundo 2  Hola mundo 3  Hola mundo 5</code>, etc hasta que termina de iterar todos los elementos de la lista. Puedes también poner una sublista usando el comando : en la secuancia. Ej: <code>fpr i in miLista[:3]</code> <-- Itera solo hasta el tercer elemento. </p>
+            </li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="main-section" id="Ejercicios_loops">
+        <header>Ejercicios loops</header>
+        <article>
+          <ol>
+            <li>Usando while, crea un script que imprima en pantalla los numeros del 1 al 10.</li>
+            <li>Crea un script que imprima en pantalla cada uno de los elementos de la siguiente lista <code>list1 = [10, 20, 30, 40, 50]</code> pero al revéz</li>
+            <li>
+              Crea un script que, dada una lista cualquiera (ej: <code>list1 = [1,2,3,4,5,6,7,8,9]</code>), cuente la cantidad de numeros pares e impares dentro de esta e imprima en pantalla los resultados. Un ejemplo I/O sería:
+              <pre>
+                <code>
+                  Lista = [1,2,3,4,5,6,7,8,9]
+                  Cantidad de números pares: 4
+                  Cantidad de números impares: 5
+                </code>
+              </pre>
+            </li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="main-section" id="Funciones">
+        <header>Funciones</header>
+        <article>
+          <p>En la programación, una función es un bloque de codigo que recibe un cierto numero de argumentos y que se puede llamar en otras partes del codigo para ejecutar una tarea. Son muy útiles a la hora de programar ya que evita la repetición de codigo, quedando así el script más limpio. Se declara con la declaración <code>def</code>.</p>
+          <pre>
+            <code>
+              // Sintaxis
+              def nombreFuncion(argumento0, argumento1, argumento2, ...):
+                lorem ipsum
+                lorem ipsum:
+                  loremipsum
+            </code>
+          </pre>
+          <p> Para llamar a la función y que haga lo que se le escribió dentro, solo se escribe el nombre junto con los argumentos que se les quiere pasar. Ahora que sabemos como es la sintaxis de una función, veamos como definirlas y llamarlas con el siguiente ejemplos:</p>
+          <pre>
+            <code>
+              // 1
+              def miFuncion():
+                print("Hola mundo")
+
+              def miFuncion2(nombre):
+                print("Mi nombre es " + nombre)
+
+              miFuncion()
+              miFuncion2("Diego")
+
+              out:
+              Hola mundo
+              Mi nombre es Diego
+
+              // 2
+              def suma(x,y):
+                print(x+y)
+                return x + y
+
+              def mayorQueTres(x):
+                if x>3: print(str(x) + " es mayor que 3")
+                else: print(str(x) + " es menor o igual que 3")
+
+              suma(3,7)
+              mayorQueTres(2)
+
+              out:
+              10
+              2 es menor o igual que 3
+            </code>
+          </pre>
+          <p>En el ejemplo 2 vimos como las funciones son declaradas, definidas y llamadas. La declaración <code>return</code> dentro de una función, puesta al final de ésta, definirá qué elemento devolverá ésta una vez llamada. Más detalles de funciones <a href="https://www.w3schools.com/python/python_functions.asp" target="_blank">aquí</a> </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Ejercicios_funciones">
+        <header>Ejercicios funciones</header>
+        <p>
+          En el siguiente <a href="https://github.com/azurite-12/Ejercicios-Python" target="_blank">repositorio</a> de github se encuentran 5 archivos de python, cada uno con funciones vacías que usted tendrá que definir y probar. Usted puede descargar el repositorio como archivo zip, o clonarlo directamente a VScode. Para clonar un repositorio, siga los siguientes pasos:
+          <ul>
+            <li>Presione <code>ctrl+shift+P</code> en VScode.</li>
+            <li>Escriba <code>Git:clone</code> en la pestaña de texto que aparece y presione <code>enter</code>.</li>
+            <li>Copie y pegue el enlace del <a href="https://github.com/azurite-12/Ejercicios-Python" target="_blank">repositorio</a> y presione <code>enter</code>.</li>
+            <li>Elija el lugar en donde guardará los archivos del repositorio en su ordenador.</li>
+            <li>Presione enter y ya tendrá los archivos para que usted los pueda editar.</li>
+          </ul>
+        </p>
+        <ol>
+          <li>En el primer archivo (ej1.py), se encuentra una función con 3 argumentos. Escriba un script tal que esta función evalúe cuál de los 3 números es el mayor entre ellos (dificultad media).</li>
+          <li>En el segundo archivo (ej2.py), se encuentra una función con 1 argumento de tipo lista. Escriba un script tal que esta función imprima en pantalla la suma de todos los elemenots de la lista, y también la multiplicación de todos los elementos de la lista.</li>
+          <li>
+            En el tercer archivo (ej3.py), se encuentra una lista con elementos representado las calificaciones de puntajes de golf. La función que le procede recibe 2 argumentos, <code>par</code>, el número promedio de golpes necesario para completar un curso de golf, y <code>strokes</code>, los golpes hechos por el golfista en cuestión. 
+            Dependiendo del número de golpes (strokes), el golfista recibe las siguientes calificaciones si se comparan con el par:
+            <ul>
+              <li><code>Strokes = 1</code>  --> "Hole-in-one!</li>
+              <li><code>Strokes <= par-2</code>  --> "Eagle" </li>
+              <li><code>Strokes = par-1</code>  --> "Birdie"</li>
+              <li><code>Strokes = par</code>  --> "Par"</li>
+              <li><code>Strokes = par+1</code>  --> "Bogey"</li>
+              <li><code>Strokes = par+2</code>  --> "Double Bogey"</li>
+              <li><code>Strokes >= par+3 </code>  -->"Go Home!"</li>
+            </ul>
+            Escriba la función dada tal que, usando la lista dada en el archivo (<code>NAMES</code>), imprima en pantalla la calificación que le corresponde al golfista en cuestión dados los argumentos <code>par</code> y <code>strokes</code>.
+          </li>
+          <li>Eb el cuarto archivo (ej4.py), se encuentra una función que recibe un argumento. Escriba un script tal que éste imprima en pantalla si el número <code>n</code> dado en la función como argumento es un palíndromo (osea, si es el mismo tanto al derecho como al revéz. Ej: 12321)</li>
+          <li>En el quinto archivo (ej5.py), se encunetra una función que recibe un argumento. Escriba un scritp tal que éste imprima en pantalla si el número <code>n</code> dado en la función como argumento es un número primo.</li>
+        </ol>
+      </section>
+
+      <section class="main-section" id="Referencias">
+        <header>Referencias</header>
+        <article>
+          <p>¿Y eso es todo? Para nada, Python es un lenguaje bastante complejo y con muchos aficionados. Hay mucho más que aprender, no por nada este lenguaje es usado en muchas aplicaciones populares y masivas. El material de este tutorial fue sacado de diversos lugares de internet. Y te invito a visitarlos para que sigas con tu proceso de aprendizaje.</p>
+          <ul>
+            <li><a href="https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php">Ejercicios de declaraciones condicionales y loops.</a></li>
+            <li><a href="https://www.w3resource.com/python-exercises/python-functions-exercises.php" target="_blank">Ejercicios de funciones.</a></li>
+            <li><a href="https://pythonistaplanet.com/python-list-exercises/" target="_blank">Breve documentación de listas en Python</a></li>
+            <li><a href="https://docs.python.org/3/" target="_blank">Documentación completa</a> de Python</li>
+          </ul>
+          <p>Muchas gracias por usar este tutorial para empezar a aprender a programar.</p>
+        </article>
+      </section>
+
+      <footer>
+        <address>
+          Diego Sebastian Alejandro Vidal Prieto<br />
+          2023<br />
+          Valdivia<br />
+          Chile
+        </address>
+      </footer>
+    </main>
+  </body>
+</html>
