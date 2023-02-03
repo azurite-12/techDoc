@@ -220,6 +220,11 @@
                     print("Su número está fuera del rango 5-10")
                 </code>
               </pre>
+              <ul>
+                <li>La palabra <code>and</code> devuelve <code>True</code> si y solo si las comparaciones a  <b>ambos</b> lados son <code>True</code>.</li>
+                <li>En cambio, la palabra <code>or</code> devuelve <code>True</code> solo si <b>una</b> (o ambas) de las comparaciones en cada lado es <code>True</code> </li>
+                <li>La palabra <code>not</code> invierte el valor booleano a la comparación que se le aplica. Ej <code>not(3==5)</code> devolverá <code>True</code> en vez de <code>False</code>.</li>
+              </ul>
             </li>
           </ul>
         </article>
@@ -372,7 +377,7 @@
               <p>El segundo ejemplo, sin embargo, usa una variable, y dentro del while, esta variable se modifica con cada iteración. Lo que resultá en el while deteniendose una ves la variable <code>count</code> llega a 5. Osea, solo se imprime <code>Hola mundo</code> 5 veces en pantalla.</p>
             </li>
             <li>
-              <b>for <code>iterator</code> in <code>sequence</code></b> --> este ciclo recibe dos valores. El primer valor va después del <code>for</code> y es la variable iteradora, usualmente denotada como <code>i</code>. Mientras que la secuencia puede ser cualquier rango de valores (usando la función <code>range()</code>). También cabe mencionar que la secuencia también recibe listas y strings. Contrario al <code>while</code> las instrucciones dentro de esta declaración se ejecutan una vez se cumple el rango de valores dado.
+              <b>for <code>iterator</code> in <code>sequence</code></b> --> este ciclo recibe dos valores. El primer valor va después del <code>for</code> y es la variable iteradora, usualmente denotada como <code>i</code>. Mientras que la secuencia puede ser cualquier rango de valores (usando la función <code>range()</code>). También cabe mencionar que la secuencia también recibe listas, tuplas y strings. Contrario al <code>while</code> las instrucciones dentro de esta declaración se ejecutan una vez se cumple el rango de valores dado.
               <pre>
                 <code>
                   // 1 usando función range
@@ -386,7 +391,7 @@
                 </code>
               </pre>
               <p>En el primer ejemplo, la instrucción dada dentro del for imprime <code>Hola mundo 0    Hola mundo 1</code>, etc. hasta que termina la secuencia range. Ésta función empieza de 0 y termina en n-1, siendo n el número entero dado a la función. Si a <code>range(x,y)</code> le das dos valores <code>x</code> e <code>y</code>, la secuencia empieza en <code>x</code> y termina en <code>y-1</code>. Ej: <code>range(2,5) --> 2 3 4</code> </p>
-              <p>En el segundo ejemplo, la instrucción dada dentro del for imprime <code>Hola mundo 2  Hola mundo 3  Hola mundo 5</code>, etc hasta que termina de iterar todos los elementos de la lista. Puedes también poner una sublista usando el comando : en la secuancia. Ej: <code>fpr i in miLista[:3]</code> <-- Itera solo hasta el tercer elemento. </p>
+              <p>En el segundo ejemplo, la instrucción dada dentro del for imprime <code>Hola mundo 2  Hola mundo 3  Hola mundo 5</code>, etc hasta que termina de iterar todos los elementos de la lista. Puedes también poner una sublista usando el comando <code>:</code> en la secuancia. Ej: <code>for i in miLista[:3]</code> <-- Itera solo hasta el tercer elemento. </p>
             </li>
           </ol>
         </article>
