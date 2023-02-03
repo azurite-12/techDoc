@@ -75,7 +75,7 @@ body {
 }
 
 #main-doc {
-    position: absolute;
+    position: relative;
     margin-left: 315px;
     padding: 20px;
     margin-bottom: 120px;
