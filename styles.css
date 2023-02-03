@@ -95,13 +95,19 @@ body {
 
 code {
     display: inline-block;
-    background-color: grey;
+    background-color: rgba(222,222,222,0.4);
     color: black;
+    font-weight: bold;;
 }
 
 pre > code {
-    border: solid;
+    border: none;
     padding-right: 20vw;
+}
+
+li > pre > code {
+    margin-left: -10vw;
+
 }
 
 .main-section a {
