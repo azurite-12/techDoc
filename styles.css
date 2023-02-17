@@ -1,7 +1,5 @@
-* {
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
+html {
+    overflow-x: hidden;
 }
 
 body {
@@ -104,6 +102,10 @@ p {
     margin: 0.65rem;
 }
 
+#Funciones pre {
+    margin-left: -7rem;
+}
+
 .main-section a:active {
     color: #58ff24;
 }
@@ -132,7 +134,7 @@ footer {
     top: 0;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 100vw;
     max-height: 275px;
     border: none;
     z-index: 1;
